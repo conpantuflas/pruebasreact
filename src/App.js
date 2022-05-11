@@ -1,20 +1,21 @@
 import React from 'react';
-import './App.css';
-import Carrusel from './componentes/carrusel';
+import Incremento from './componentes/incremento';
+import Luz from './componentes/luz';
+import Turnoguardian from './componentes/turnoguardian';
+import {Primera} from './componentes/useeffect';
+import Impresora from './componentes/impresora';
 
 
 function App() {
-  const style={
-    estilos:{
-      display: "flex",
-      alignItems: "center",
-      height: "100vh" 
-    }
-  }
+
   return (
-    <div style={style.estilos}>
-      <Carrusel />
-    </div>
+    <>
+      <Incremento />
+      <Luz />
+      <Turnoguardian />
+      <Primera />
+      <Impresora />
+    </>
   );
 }
 
